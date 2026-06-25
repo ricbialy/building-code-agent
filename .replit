@@ -41,3 +41,7 @@ outputType = "console"
 [[ports]]
 localPort = 3000
 externalPort = 3000
+
+[deployment]
+deploymentTarget = "autoscale"
+run = ["node", "src/index.js"]
