@@ -20,4 +20,8 @@ app.use((err, req, res, next) => {
 });
 
 const port = process.env.PORT || 3000;
-app.listen(port, () => console.log(`Building code agent listening on :${port}`));
+app.listen(port, () => {
+  const keys = process.env.SERVICE_API_KEYS || '';
+  console.log(`Building code agent listening on :${port}`);
+  console.log(`SERVICE_API_KEYS configured: ${keys.length > 0} (${keys.length} chars, starts: ${keys.slice(0, 4)})`);
+});
