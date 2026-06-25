@@ -12,7 +12,6 @@ channel = "stable-25_05"
 PORT = "3000"
 DEFAULT_MODEL = "claude-opus-4-5"
 EXTRACTION_MODEL = "claude-haiku-4-5"
-SERVICE_API_KEYS = "dev-key-1"
 
 [workflows]
 runButton = "Project"
